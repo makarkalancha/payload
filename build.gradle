@@ -1,0 +1,20 @@
+group 'com.makco.runnertracking.http'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+//    compileOnly 'org.projectlombok:lombok'
+//    annotationProcessor 'org.projectlombok:lombok'
+//    apt "org.projectlombok:lombok:1.16.18"
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    annotationProcessor 'org.projectlombok:lombok:1.16.18'
+    compile 'com.google.guava:guava:' + guava_version
+}
